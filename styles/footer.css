@@ -1,0 +1,97 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    background: var(--blackColor);
+    color: var(--whiteColor);
+    padding: 2em;
+}
+
+footer .StayNow{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .StayNow .StayNowText{
+    padding: 1em;
+}
+
+footer .StayNow .StayNowText h2{
+    margin: 1em 0;
+    color: var(--PrimaryColor);
+}
+
+footer .StayNow .StayNowText p{
+    color: var(--SecondColor);
+}
+
+footer .StayNow .StayNowText button{
+    margin: 1em 0;
+    padding: .5em 1em;
+    font-size: 18px;
+    border: none;
+    border-radius: 40px;
+    background: var(--PrimaryColor);
+    color: var(--whiteColor);
+    cursor: pointer;
+    transition: .5s;
+}
+
+footer .StayNow .StayNowText button:hover{
+    background: var(--PrimaryHover);
+}
+
+footer .StayNow .StayNowImg{
+    margin: 1em;
+}
+
+footer .StayNow .StayNowImg img{
+    width: 100%;
+}
+
+footer nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none;
+}
+
+li svg{
+    fill: var(--whiteColor);
+    cursor: pointer;
+    transform: scale(0.7);
+    margin-top: 1em;
+}
+
+li svg:hover{
+    fill: var(--PrimaryHover);
+}
+
+@media screen and (min-width: 768px) {
+    footer .StayNow{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .StayNowText{
+        width: 600px;
+    }
+
+    footer .StayNow .StayNowImg img{
+        width: 400px;
+    }
+
+    li svg{
+        margin-top: none;
+    }
+
+}

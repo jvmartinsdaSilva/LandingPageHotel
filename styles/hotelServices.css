@@ -1,0 +1,28 @@
+main section.hotelServices{
+    margin: 1em auto;
+}
+
+main section.hotelServices ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+main section.hotelServices li{
+    display: flex;
+    margin: 1em;
+    width: 150px;
+    align-items: center;
+}
+
+
+
+
+main section.hotelServices li p{
+    font-size: 14px;
+    margin: 0 2em;
+    color: var(--SecondColor);
+}
